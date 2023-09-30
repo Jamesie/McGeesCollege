@@ -1,0 +1,212 @@
+.welcome_wrapper {
+    padding-top: 3rem;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: var(--clr-white);
+}
+
+.welcome_image_container {
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.welcome_image_container img {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+}
+
+.welcome_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.line {
+    border: 2px solid var(--clr-dark-accent);
+    width: 100px;
+    height: 0.5px
+}
+
+.header_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 30px;
+    width: 100%;
+}
+
+.welcome_text_container p {
+    text-align: center;
+    width: auto;
+    min-width: 450px;
+    line-height: 1.4rem;
+    padding: 2rem 2rem 0rem 5rem;
+    color: var(--clr-mid);
+}
+
+.welcome_image_container h1 {
+    color: var(--clr-dark);
+}
+
+.header_background_container p {
+    z-index: 1;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    width: 400px;
+    color: var(--clr-white);
+    font-weight: 400;
+    font-size: large;
+}
+
+.header_background_container a {
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+    left: 270px;
+}
+
+.home_course_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.home_course_header h1 {
+    color: var(--clr-dark);
+    font-weight: 800;
+}
+
+.adjust_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home_course_container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1300px;
+    height: 450px;
+}
+
+.home_course_wrapper {
+    width: 300px;
+    height: 400px;
+    background-color: var(--clr-light);
+}
+
+.home_course_wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.home_course_text {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.view_courses_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+.view_courses_container a {
+    width: 300px;
+    margin-bottom: 2rem;
+}
+
+.qualification_title {
+    background-color: var(--clr-light-accent);
+    color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.qualification_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    align-items: start;
+    height: 550px;
+    background-color: var(--clr-light-accent);
+    max-width: 1300px;
+}
+
+.qualification_container {
+    width: 300px;
+    height: 450px;
+    background-color: #CDE5F7;
+    border: 1px solid var(--clr-dark);
+    box-shadow: 2px 4px 6px var(--clr-mid);
+}
+
+.adjust_qualification_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-light-accent);
+}
+
+.qualification_image {
+    width: 100px;
+    height: auto;
+}
+
+.qualification_image_container {
+    position: relative;
+    left: 90px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    border: 1px solid var(--clr-dark);
+    border-radius: 7px;
+    background-color: var(--clr-white);
+}
+
+.qualification_container h1 {
+    color: var(--clr-white);
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.qualification_container p {
+    color: var(--clr-white);
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+.qualification_title a {
+    width: 300px;
+    font-weight: 500;
+    background-color: var(--clr-light-accent);
+    border: 1px solid var(--clr-white);
+    margin-bottom: 3rem
+}
