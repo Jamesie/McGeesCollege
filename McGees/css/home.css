@@ -27,12 +27,6 @@
     padding-top: 2rem;
 }
 
-.line {
-    border: 2px solid var(--clr-dark-accent);
-    width: 100px;
-    height: 0.5px
-}
-
 .header_text {
     display: flex;
     align-items: center;
@@ -85,12 +79,6 @@
 .home_course_header h1 {
     color: var(--clr-dark);
     font-weight: 800;
-}
-
-.adjust_container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .home_course_container {
@@ -209,4 +197,9 @@
     background-color: var(--clr-light-accent);
     border: 1px solid var(--clr-white);
     margin-bottom: 3rem
+}
+
+.qualification_title a:hover {
+    background-color: var(--clr-dark-accent);
+    color: var(--clr-white)
 }
