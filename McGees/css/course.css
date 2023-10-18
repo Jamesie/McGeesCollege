@@ -19,23 +19,6 @@
     max-width: 1450px;
 }
 
-.course_display_container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1300px;
-    height: 450px;
-}
-
-.course_display_wrapper {
-    width: 300px;
-    height: 480px;
-    background-color: var(--clr-light);
-    border-radius: 20px;
-}
 
 .course_display_image {
     height: 190px;
