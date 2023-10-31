@@ -1,11 +1,3 @@
-.header_background_container h1 {
-    z-index: 1;
-    position: relative;
-    top: -310px;
-    text-align: center;
-    color: var(--clr-white);
-}
-
 .course_level_title_container {
     display: flex;
     align-items: center;

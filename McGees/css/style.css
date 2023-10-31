@@ -192,6 +192,20 @@ body{
     z-index: -1;
 }
 
+.hero {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    color: var(--clr-white)
+}
+
 .footer_container {
     display: flex;
     justify-content: space-around;
@@ -372,4 +386,112 @@ body{
     display: flex;
     justify-content: center;
     background-color: var(--clr-light-accent);
+}
+
+.course_header_background {
+    width: 100%;
+    height: 300px;
+    background-color: var(--clr-light);
+    display: flex;
+    justify-content: center;
+}
+
+.course_title {
+    width: 450px;
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+
+.course_name {
+    padding-top: 3rem;
+    margin-left: 2rem;
+}
+
+.sticky_course_container {
+    width: 250px;
+    height: 400px;
+    margin-top: 6rem;
+    background-color: var(--clr-white);
+    position: sticky;
+    top: 130px;
+    left: 550px;
+    align-self: flex-start;
+    border: 1px solid 
+}
+
+.spacer {
+    height: 2000px;
+}
+
+.course_header_sizing {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+}
+
+.course_header_text {
+    width: fit-content;
+    height: 100%;
+}
+
+.sticky_wrapper {
+    display: flex;
+    justify-content: center;
+    height: 1500px;
+    width: 100%;
+}
+
+.about_course_title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.course_content {
+    padding-top: 2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_course_description {
+    padding: 4rem;
+}
+
+.learning_obj_container {
+    background-color: var(--clr-light);
+    border: 1px solid;
+    padding: 1.5rem;
+    width: 80%;
+    height: 200px;
+}
+
+.learning_obj_container p {
+    padding-top: 1rem;
+}
+
+.learning_obj_container h1 {
+    font-size: 30px;
+}
+
+.sticky_course_container img {
+    width: 250px;
+}
+
+.sticky_course_container h1 {
+    padding: 1rem 1rem 2rem 2rem;
+}
+
+.sticky_info {
+    border-bottom: 1px solid var(--clr-mid);
+    width: 70%;
+    
+}
+
+.center_sticky_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,5 +1,5 @@
 
-.header_background_container p {
+.hero p {
     z-index: 1;
     position: absolute;
     top: 350px;
@@ -10,7 +10,7 @@
     font-size: large;
 }
 
-.header_background_container a {
+.hero a {
     z-index: 1;
     position: absolute;
     top: 500px;
