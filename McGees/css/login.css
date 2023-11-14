@@ -22,7 +22,7 @@
 
 .login_card {
     width: 500px;
-    height: 600px;
+    height: 550px;
     background-color: var(--clr-light);
     border-radius: 30px;
 }
@@ -36,7 +36,8 @@
     align-items: center;
 }
 
-.login_title h1 {
+.login_title h1 {git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
     font-weight: 200;
     font-size: 40px;
 }
@@ -53,7 +54,7 @@
 .text_field_container input {
     height: 60px;
     width: 70%;
-    border: 1px solid var(--clr-mid);
+    border: 1px solid var(--clr-dark-accent);
     background-color: transparent;
     padding-left: 1.5rem;
     font-size: large;
@@ -62,7 +63,9 @@
 }
 
 .text_field_container input:active,
-.text_field_container input:focus {
+.text_field_container input:focus,
+.text_field_container_signup input:active,
+.text_field_container_signup input:focus {
     border-color: var(--clr-dark-accent);
     border-width: 2px;
 }
@@ -78,4 +81,59 @@
     color: var(--clr-dark-accent);
     font-weight: bold;
     padding-left: 5rem;
+}
+
+.signin_button {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin_button a {
+    width: 220px;
+}
+
+.create_account_link_container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 5px;
+}
+
+.no_account_link {
+    text-decoration: none;
+    color: var(--clr-mid);
+}
+
+.create_account_link {
+    text-decoration: none;
+}
+
+.create_account_link:hover,
+.forgot_password a:hover {
+    text-decoration: underline;
+}
+
+.text_field_container_signup {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text_field_container_signup input {
+    height: 60px;
+    width: 70%;
+    border: 1px solid var(--clr-dark-accent);
+    background-color: transparent;
+    padding-left: 1.5rem;
+    font-size: large;
+    box-shadow: 1px 2px 5px var(--clr-mid);
+    outline: none;
 }

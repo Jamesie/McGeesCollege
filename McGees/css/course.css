@@ -19,10 +19,12 @@
 }
 
 .course_name {
-    height: 260px;
+    height: 280px;
+    width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-left: 2rem;
 }

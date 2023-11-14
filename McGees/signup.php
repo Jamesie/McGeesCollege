@@ -16,14 +16,19 @@
     <div class="login_wrapper">
         <div class="login_card">
             <div class="login_title">
-                <h1>Sign In</h1>
+                <h1>Sign Up</h1>
             </div>
-            <div class="text_field_container">
-                <input type="text" placeholder= "Email">
-                <input type="text" placeholder= "Password">
+            <div class="text_field_container_signup">
+                <input type="email" placeholder= "Email">
+                <input type="password" placeholder= "Password">
+                <input type="password" placeholder= "Confirm Password">
             </div>
-            <div class="forgot_password">
-                <a href = "Index.html">Forgot Password?</a>
+            <div class="signin_button">
+                <a href = "Index.html" class = "square_button">Sign In</a>
+            </div>
+            <div class="create_account_link_container">
+                <p>Already have an account?</p>
+                <a href = "login.php" class = "create_account_link">Sign In</a>
             </div>
         </div>
     </div>
