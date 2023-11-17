@@ -36,8 +36,7 @@
     align-items: center;
 }
 
-.login_title h1 {git config --global user.email "you@example.com"
-    git config --global user.name "Your Name"
+.login_title h1 {
     font-weight: 200;
     font-size: 40px;
 }
@@ -91,13 +90,15 @@
     align-items: center;
 }
 
-.signin_button a {
+.signin_button button {
     width: 220px;
+    font-size: large;
 }
 
 .create_account_link_container {
     width: 100%;
     height: 60px;
+    border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: end;

@@ -95,7 +95,7 @@
     align-items: center;
     height: 120px;
     width: 120px;
-    border: 1px solid var(--clr-dark);
+    border: 1px solid rgba(49, 48, 48, .5);
     border-radius: 7px;
     background-color: var(--clr-white);
 }

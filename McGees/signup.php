@@ -18,14 +18,36 @@
             <div class="login_title">
                 <h1>Sign Up</h1>
             </div>
-            <div class="text_field_container_signup">
-                <input type="email" placeholder= "Email">
-                <input type="password" placeholder= "Password">
-                <input type="password" placeholder= "Confirm Password">
-            </div>
-            <div class="signin_button">
-                <a href = "Index.html" class = "square_button">Sign In</a>
-            </div>
+            <form action="includes/signup.inc.php" method="post">
+                <div class="text_field_container_signup">
+                    <input type="email" name = "email" placeholder= "Email">
+                    <input type="password" name = "pwd" placeholder= "Password">
+                    <input type="password" name = "pwdrepeat" placeholder= "Confirm Password">
+                </div>
+                <?php
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"] == "emptyinput") {
+                        echo "<p>Fill all fields</p>";
+                    }
+                    if ($_GET["error"] == "invalidpassword") {
+                        echo "<p>Password must have uppercase, lowercase, number and symbol</p>";
+                    }
+                    if ($_GET["error"] == "passwordsdontmatch") {
+                        echo "<p>Passwords don't match</p>";
+                    }
+                    if ($_GET["error"] == "emailtaken") {
+                        echo "<p>This email already has an account</p>";
+                    }
+                    if ($_GET["error"] == "stmtfailed") {
+                        echo "<p>Something went wrong</p>";
+                    }
+                }
+                ?>
+                <div class="signin_button">
+                    <button type = "submit" name = "submit" class = "square_button">Sign In</button>
+                </div>
+            </form>
+
             <div class="create_account_link_container">
                 <p>Already have an account?</p>
                 <a href = "login.php" class = "create_account_link">Sign In</a>
