@@ -19,21 +19,21 @@
         <div class="header_link_container">
             <ul class="header_menu">
                 <li class="header_item">
-                    <a href="students.html" class="header_link underline_link">Students</a>
+                    <a href="students.php" class="header_link <?php echo ($currentPage === 'students') ? 'active_link' : 'underline_link'; ?>">Students</a>
                 </li>
                 <li class="header_item">
-                    <a href="staff.html" class="header_link underline_link">Staff</a>
+                    <a href="staff.php" class="header_link <?php echo ($currentPage === 'staff') ? 'active_link' : 'underline_link'; ?>">Staff</a>
                 </li>
                 <li class="header_item">
-                    <a href="qualifications.html" class="header_link underline_link">Qualifications</a>
+                    <a href="qualifications.php" class="header_link <?php echo ($currentPage === 'qualifications') ? 'active_link' : 'underline_link'; ?>">Qualifications</a>
                 </li>
                 <li class="header_item">
-                    <a href="news.html" class="header_link underline_link">News</a>
+                    <a href="news.php" class="header_link <?php echo ($currentPage === 'news') ? 'active_link' : 'underline_link'; ?>">News</a>
                 </li>
             </ul>
         </div>
         <div class="logo_container">
-            <a href = "Index.html">
+            <a href = "Index.php">
                 <img src="Images/logo.png" alt="Logo" class="logo">
             </a>
         </div>
@@ -41,7 +41,7 @@
             <input class = "text_field" type="text" placeholder="Search..." >
 
             <?php
-            if (isset($SESSION["Email"])) {
+            if (isset($_SESSION["studentID"])) {
                 echo "<a class = 'profile_link' href = 'account.php'><i class = 'fa-solid fa-user fa-lg'></i></a>";
             }
             else {
@@ -49,23 +49,22 @@
             }
             ?>
             
-        </i>
         </div>
     </div>
     <nav class="navbar">
         <div class="navbar_link_container">
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="courses.html" class="navbar_link underline_link">Courses</a>
+                    <a href="courses.php" class="navbar_link <?php echo ($currentPage === 'courses') ? 'active_link' : 'underline_link'; ?>">Courses</a>
                 </li>
                 <li class="header_item">
-                    <a href="gcse.html" class="navbar_link underline_link">GCSE's</a>
+                    <a href="gcse.php" class="navbar_link <?php echo ($currentPage === 'gcse') ? 'active_link' : 'underline_link'; ?>">GCSE's</a>
                 </li>
                 <li class="header_item">
-                    <a href="help.html" class="navbar_link underline_link">Help & Support</a>
+                    <a href="help.php" class="navbar_link <?php echo ($currentPage === 'help') ? 'active_link' : 'underline_link'; ?>">Help & Support</a>
                 </li>
                 <li class="header_item">
-                    <a href="about.html" class="navbar_link underline_link">About</a>
+                    <a href="about.php" class="navbar_link <?php echo ($currentPage === 'about') ? 'active_link' : 'underline_link'; ?>">About</a>
                 </li>
             </ul>
         </div>

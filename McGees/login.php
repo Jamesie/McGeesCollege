@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="login_header">
-        <a href = "Index.html">
+        <a href = "Index.php">
             <img src= "Images/logo.png" alt = "logo">
         </a>
     </div>
@@ -23,24 +23,26 @@
                     <input type="email" name = "email" placeholder= "Email">
                     <input type="password" name = "pwd" placeholder= "Password">
                 </div>
-                <?php
-                if (isset($_GET["error"])) {
-                    if ($_GET["error"] == "emptyinput") {
-                        echo "<p>Fill all fields</p>";
-                    }
-                    if ($_GET["error"] == "invalidpassword") {
-                        echo "<p>Wrong Password</p>";
-                    }
-                    if ($_GET["error"] == "wronglogin") {
-                        echo "<p>Incorrect Credentials</p>";
-                    }
-                    if ($_GET["error"] == "stmtfailed") {
-                        echo "<p>Something went wrong</p>";
-                    }
-                }
-                ?>
                 <div class="forgot_password">
                     <a href = "Index.html">Forgot Password?</a>
+                </div>
+                <div class="error_message_container">
+                    <?php
+                    if (isset($_GET["error"])) {
+                        if ($_GET["error"] == "emptyinput") {
+                            echo "<p>Fill all fields</p>";
+                        }
+                        if ($_GET["error"] == "invalidpassword") {
+                            echo "<p>Wrong Password</p>";
+                        }
+                        if ($_GET["error"] == "wronglogin") {
+                            echo "<p>Incorrect Credentials</p>";
+                        }
+                        if ($_GET["error"] == "stmtfailed") {
+                            echo "<p>Something went wrong</p>";
+                        }
+                    }
+                    ?>
                 </div>
                 <div class="signin_button">
                     <button type = "submit" name = "submit" class = "square_button">Sign In</a>

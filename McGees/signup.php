@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="login_header">
-        <a href = "Index.html">
+        <a href = "Index.php">
             <img src= "Images/logo.png" alt = "logo">
         </a>
     </div>
@@ -24,27 +24,29 @@
                     <input type="password" name = "pwd" placeholder= "Password">
                     <input type="password" name = "pwdrepeat" placeholder= "Confirm Password">
                 </div>
-                <?php
-                if (isset($_GET["error"])) {
-                    if ($_GET["error"] == "emptyinput") {
-                        echo "<p>Fill all fields</p>";
+                <div class="error_message_container">
+                    <?php
+                    if (isset($_GET["error"])) {
+                        if ($_GET["error"] == "emptyinput") {
+                            echo "<p>Fill all fields</p>";
+                        }
+                        if ($_GET["error"] == "invalidpassword") {
+                            echo "<p>Password must have uppercase, lowercase, number and symbol</p>";
+                        }
+                        if ($_GET["error"] == "passwordsdontmatch") {
+                            echo "<p>Passwords don't match</p>";
+                        }
+                        if ($_GET["error"] == "emailtaken") {
+                            echo "<p>This email already has an account</p>";
+                        }
+                        if ($_GET["error"] == "stmtfailed") {
+                            echo "<p>Something went wrong</p>";
+                        }
                     }
-                    if ($_GET["error"] == "invalidpassword") {
-                        echo "<p>Password must have uppercase, lowercase, number and symbol</p>";
-                    }
-                    if ($_GET["error"] == "passwordsdontmatch") {
-                        echo "<p>Passwords don't match</p>";
-                    }
-                    if ($_GET["error"] == "emailtaken") {
-                        echo "<p>This email already has an account</p>";
-                    }
-                    if ($_GET["error"] == "stmtfailed") {
-                        echo "<p>Something went wrong</p>";
-                    }
-                }
-                ?>
+                    ?>
+                </div>
                 <div class="signin_button">
-                    <button type = "submit" name = "submit" class = "square_button">Sign In</button>
+                    <button type = "submit" name = "submit" class = "square_button">Coninue</button>
                 </div>
             </form>
 

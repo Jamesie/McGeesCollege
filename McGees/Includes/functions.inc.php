@@ -63,8 +63,8 @@ function emailUsed($conn, $email) {
     mysqli_stmt_close($stmt);
 }
 
-function createUser($conn, $email, $pwd) {
-    $sql = "INSERT INTO students (Email, Password) VALUES (?, ?);";
+function createUser($conn, $firstName, $lastName, $email, $pwd, $phoneNumber, $nokNumber, $postCode) {
+    $sql = "INSERT INTO students (FirstName, LastName, Email, Password, PhoneNumber, NoKPhoneNumber, PostCode) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../signup.php?error=stmtfailed");
@@ -73,10 +73,10 @@ function createUser($conn, $email, $pwd) {
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "ss", $email, $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "sssssss", $firstName, $lastName, $email, $hashedPwd, $phoneNumber, $nokNumber, $postCode);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../signup.php?error=none");
+    header("location: ../index.php?error=none");
     exit();
 }
 
@@ -109,9 +109,21 @@ function loginUser($conn, $email, $pwd) {
     }
     else if ($checkPwd === true) {
         session_start();
-        $_SESSION["StudentID"] = $emailExists["StudentID"];
-        $_SESSION["Email"] = $emailExists["Email"];
-        header("location: ../index.html");
+        $_SESSION["studentID"] = $emailExists["StudentID"];
+        $_SESSION["email"] = $emailExists["Email"];
+        header("location: ../index.php?error=none");
         exit();
     }
+}
+
+function emptyInputDetails($firstName, $lastName, $phoneNumber, $nokNumber, $postCode) {
+    $result = null;
+
+    if (empty($firstName) || empty($lastName) || empty($phoneNumber) || empty($nokNumber) || empty($postCode)) {
+        $result = true;
+    }
+    else {
+        $result = false;
+    }
+    return $result;
 }
