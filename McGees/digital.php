@@ -14,52 +14,10 @@
     <script src="https://kit.fontawesome.com/32031fa038.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="header_link_container">
-            <ul class="header_menu">
-                <li class="header_item">
-                    <a href="students.html" class="header_link underline_link">Students</a>
-                </li>
-                <li class="header_item">
-                    <a href="staff.html" class="header_link underline_link">Staff</a>
-                </li>
-                <li class="header_item">
-                    <a href="qualifications.html" class="header_link underline_link">Qualifications</a>
-                </li>
-                <li class="header_item">
-                    <a href="news.html" class="header_link underline_link">News</a>
-                </li>
-            </ul>
-        </div>
-        <div class="logo_container">
-            <a href = "Index.html">
-                <img src="Images/logo.png" alt="Logo" class="logo">
-            </a>
-        </div>
-        <div class="search_container">
-            <input class = "text_field" type="text" placeholder="Search..." >
-                <a class = "profile_link" href = "login.php"><i class="fa-solid fa-user fa-lg"></i></a>
-            </i>
-        </div>
-    </div>
-    <nav class="navbar">
-        <div class="navbar_link_container">
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                    <a href="courses.html" class="navbar_link underline_link">Courses</a>
-                </li>
-                <li class="header_item">
-                    <a href="gcse.html" class="navbar_link underline_link">GCSE's</a>
-                </li>
-                <li class="header_item">
-                    <a href="help.html" class="navbar_link underline_link">Help & Support</a>
-                </li>
-                <li class="header_item">
-                    <a href="about.html" class="navbar_link underline_link">About</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <?php
+    $currentPage = 'home';
+    include_once "header.php";
+    ?>
     <div class="course_header_background">
         <div class="course_header_sizing">
             <div class="course_header_text">
@@ -120,7 +78,7 @@
                                 <p>English</p>
                             </div>
                         </div>
-                        <a href="courses.html" class = "square_button"><i class="fa-solid fa-cart-shopping fa-lg"></i>Add to cart</a>
+                        <a href="courses.php" class = "square_button"><i class="fa-solid fa-cart-shopping fa-lg"></i>Add to cart</a>
                     </div>
                 </div>
             </div>
@@ -175,49 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="footer_container">
-        <div class="footer_logo_wrapper">
-            <div class="footer_logo_text_container">
-                <a href="Index.html"><img class = "logo" src="Images/footer_logo.png" alt="Logo"></a>
-                <p>
-                    Join McGees College and get your qualification with modern learning methods at your own pace
-                </p>
-            </div>
-            <div class="socials">
-                <a href="https://www.facebook.com/SillyBallshehe/" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/home" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-            </div>
-        </div>
-        <div class="footer_links">
-            <h1>Popular Courses</h1>
-            <a href="courses.html" class="navbar_link underline_link">A-Level Business</a>
-            <a href="courses.html" class="navbar_link underline_link">A-Level Languages</a>
-            <a href="courses.html" class="navbar_link underline_link">A-Level Digital</a>
-            <a href="courses.html" class="navbar_link underline_link">GCSE Maths</a>
-            <a href="courses.html" class="navbar_link underline_link">GCSE Computer Science</a>
-            <a href="courses.html" class="navbar_link underline_link">GCSE English</a>
-        </div>
-        <div class="footer_links">
-            <h1>Pages</h1>
-            <a href="courses.html" class="navbar_link underline_link">Courses</a>
-            <a href="help.html" class="navbar_link underline_link">Help & Support</a>
-            <a href="about.html" class="navbar_link underline_link">About</a>
-            <a href="gcse.html" class="navbar_link underline_link">GCSE</a>
-            <a href="news.html" class="navbar_link underline_link">News</a>
-            <a href="students.html" class="navbar_link underline_link">Students</a>
-        </div>
-        <div class="footer_links">
-            <h1>Contact</h1>
-            <p>Email: <br>
-                mcgeescollege@gmail.com
-            </p>
-            <p>Phone Number: <br>
-                03486948694
-            </p>
-            <p>Address: <br>
-                mcgeesway
-            </p>
-        </div>
-    </div>
+    <?php
+    include_once "footer.php";
+    ?>
 </body>

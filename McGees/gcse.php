@@ -41,7 +41,7 @@
                         from £x full
                     </p>
                     <div class="line"></div>
-                    <a href="math.html" class = "square_button">Read More</a>
+                    <a href="math.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="course_display_wrapper">
@@ -56,7 +56,7 @@
                         from £x full
                     </p>
                     <div class="line"></div>
-                    <a href="english.html" class = "square_button">Read More</a>
+                    <a href="english.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="course_display_wrapper">
@@ -71,7 +71,7 @@
                         from £x full
                     </p>
                     <div class="line"></div>
-                    <a href="computerscience.html" class = "square_button">Read More</a>
+                    <a href="computerscience.php" class = "square_button">Read More</a>
                 </div>
             </div>
         </div>

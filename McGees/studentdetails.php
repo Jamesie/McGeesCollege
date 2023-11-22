@@ -14,7 +14,7 @@ session_start()
 </head>
 <body>
     <div class="login_header">
-        <a href = "Index.html">
+        <a href = "Index.php">
             <img src= "Images/logo.png" alt = "logo">
         </a>
     </div>

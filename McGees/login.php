@@ -24,7 +24,7 @@
                     <input type="password" name = "pwd" placeholder= "Password">
                 </div>
                 <div class="forgot_password">
-                    <a href = "Index.html">Forgot Password?</a>
+                    <a href = "Index.php">Forgot Password?</a>
                 </div>
                 <div class="error_message_container">
                     <?php

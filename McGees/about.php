@@ -30,7 +30,7 @@
             </div>
             <div class="about_us_text">
                 <p>At McGee's College, we are pioneers in the digital age, specializing in cutting-edge digital technologies. Our mission is to equip students with the skills and knowledge needed to excel in the rapidly evolving digital landscape. With a focus on innovation and practical application, we prepare our students to thrive in the tech-driven world, empowering them to shape the future of digital technology.</p>
-                <a class = "square_button" href = "Index.html">Read More</a>
+                <a class = "square_button" href = "Index.php">Read More</a>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
                 <div class="about_information_text">
                     <p>Our education is exceptional, providing students with a transformative learning experience.</p>
                 </div>
-                <a class = "square_button" href = "Index.html">Read More</a>
+                <a class = "square_button" href = "Index.php">Read More</a>
             </div>
             <div class="vertical_seperator"></div>
             <div class="about_info_container">
@@ -51,7 +51,7 @@
                 <div class="about_information_text">
                     <p>Our financial aid program makes our courses affordable for all.</p>
                 </div>                
-                <a class = "square_button" href = "Index.html">Read More</a>
+                <a class = "square_button" href = "Index.php">Read More</a>
             </div>
             <div class="vertical_seperator"></div>
             <div class="about_info_container">
@@ -60,7 +60,7 @@
                 <div class="about_information_text">
                     <p>We offer flexibility of anytime, anywhere access to course materials, engaging interactive content, and dedicated support.</p>
                 </div>
-                <a class = "square_button" href = "Index.html">Read More</a>
+                <a class = "square_button" href = "Index.php">Read More</a>
             </div>
         </div>
     </div>

@@ -31,7 +31,7 @@
     <div class="latest_news_backrgound">
         <div class="latest_news_title">
             <h1>Latest News</h1>
-            <a href = "news.html">view all<i class="fa-solid fa-arrow-right fa-sm"></i></a>
+            <a href = "news.php">view all<i class="fa-solid fa-arrow-right fa-sm"></i></a>
         </div>
         <div class="adjust_container">
             <div class="add_max_width">
@@ -43,7 +43,7 @@
                     </div>
                     <p>Crumbling concrete crisis spreads to housing, shops and offices</p>
                     <div class="read_more_button">
-                        <a href="courses.html" class = "square_button">Read More</a>
+                        <a href="courses.php" class = "square_button">Read More</a>
                     </div>                </div>
                 <div class="latest_news_container">
                     <img src = "Images/news_image_2.png">
@@ -53,7 +53,7 @@
                     </div>
                     <p>What is Raac and why is it causing an issue in schools?</p>
                     <div class="read_more_button">
-                        <a href="courses.html" class = "square_button">Read More</a>
+                        <a href="courses.php" class = "square_button">Read More</a>
                     </div>                </div>
                 <div class="latest_news_container">
                     <img src = "Images/news_image_3.png">
@@ -63,7 +63,7 @@
                     </div>
                     <p>Call for urgent clarity on schools’ trans policy after Sunak ‘U-turn’</p>
                     <div class="read_more_button">
-                        <a href="courses.html" class = "square_button">Read More</a>
+                        <a href="courses.php" class = "square_button">Read More</a>
                     </div>
                 </div>
             </div>

@@ -53,7 +53,7 @@
                     <div class="thick_seperator"></div>
                 </div>
                 <div class="center_qualification_button">
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="course_display_wrapper">
@@ -66,7 +66,7 @@
                     <div class="thick_seperator"></div>
                 </div>
                 <div class="center_qualification_button">
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="course_display_wrapper">
@@ -78,7 +78,7 @@
                     <div class="thick_seperator"></div>
                 </div>
                 <div class="center_qualification_button">
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
         </div> 
@@ -104,7 +104,7 @@
                     <div class="thick_seperator"></div>
                 </div>
                 <div class="center_qualification_button">
-                    <a href="courses.html" class = "square_button transparent">Read More</a>
+                    <a href="courses.php" class = "square_button transparent">Read More</a>
                 </div>            
             </div>
             <div class="qualification_container">
@@ -118,7 +118,7 @@
                     <div class="thick_seperator"></div>
                 </div>
                 <div class="center_qualification_button">
-                    <a href="courses.html" class = "square_button transparent">Read More</a>
+                    <a href="courses.php" class = "square_button transparent">Read More</a>
                 </div>            
             </div>
             <div class="qualification_container">
@@ -132,7 +132,7 @@
                     <div class="thick_seperator"></div>
                 </div>
                 <div class="center_qualification_button">
-                    <a href="courses.html" class = "square_button transparent">Read More</a>
+                    <a href="courses.php" class = "square_button transparent">Read More</a>
                 </div>            
             </div>
         </div>

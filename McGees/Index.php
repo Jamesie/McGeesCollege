@@ -20,7 +20,7 @@
         <p>
             Distance learning, or online learning, is an alternative route to studying a degree with a university in the UK, and gives your studies more flexibility, which may suit your circumstances.
         </p>
-        <a href="courses.html" class = "square_button">Courses</a>
+        <a href="courses.php" class = "square_button">Courses</a>
     </div>
 
     <div class="welcome_wrapper">
@@ -52,7 +52,7 @@
                     <h2>
                         A-Level Business
                     </h2>
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -63,7 +63,7 @@
                     <h2>
                         A-Level Digital
                     </h2>
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -74,7 +74,7 @@
                     <h2>
                         A-Level Languages
                     </h2>
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
                     <h2>
                         GCSE Maths
                     </h2>
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -100,7 +100,7 @@
                     <h2>
                         GCSE English
                     </h2>
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -111,13 +111,13 @@
                     <h2>
                         GCSE Computer Science
                     </h2>
-                    <a href="courses.html" class = "square_button">Read More</a>
+                    <a href="courses.php" class = "square_button">Read More</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="view_courses_container">
-        <a href="courses.html" class = "square_button">Browse all courses</a>
+        <a href="courses.php" class = "square_button">Browse all courses</a>
     </div>
     <div class="qualification_title">
         <h1>Complete your qualification online!</h1>
@@ -148,7 +148,7 @@
         </div>
     </div>
     <div class="qualification_title">
-        <a href="about.html" class = "square_button">About McGees</a>
+        <a href="about.php" class = "square_button">About McGees</a>
     </div>
     <div class="home_course_header"></div>
     <?php
