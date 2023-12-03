@@ -64,7 +64,7 @@
                                 <p>Subject</p>
                             </div>
                             <div class="sticky_value">
-                                <p>Computer Science</p>
+                                <p>CS</p>
                             </div>
                         </div>
                         <div class="sticky_info">
