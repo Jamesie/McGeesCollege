@@ -78,7 +78,19 @@
                                 <p>English</p>
                             </div>
                         </div>
-                        <a href="courses.php" class = "square_button"><i class="fa-solid fa-cart-shopping fa-lg"></i>Add to cart</a>
+                        <div class = "add_course_container">
+                            <form action="includes/course.inc.php" method="post">
+                                <input type="hidden" name="course_variable" value="computerscience">
+                                <button type = "submit" name = "submit_course" class = "square_button"><i class="fa-solid fa-cart-shopping fa-lg"></i>Add to account</button>
+                                <?php
+                                    if (isset($_GET["error"])) {
+                                        if ($_GET["error"] == "notloggedin") {
+                                            echo "<p>Must log in</p>";
+                                        }
+                                    }
+                                ?>
+                            </form>
+                        </div>                    
                     </div>
                 </div>
             </div>

@@ -40,15 +40,20 @@
         <div class="search_container">
             <input class = "text_field" type="text" placeholder="Search..." >
 
-            <?php
-            if (isset($_SESSION["studentID"])) {
-                echo "<a class = 'profile_link' href = 'account.php'><i class = 'fa-solid fa-user fa-lg'></i></a>";
-            }
-            else {
-                echo "<a class = 'profile_link' href = 'login.php'><i class = 'fa-solid fa-user fa-lg'></i></a>";
-            }
-            ?>
-            
+            <i id="dropdownBtn" class = 'fa-solid fa-user fa-lg clickable'></i>
+            <div class="dropdown-content" id="dropdownContent">
+                <?php
+                    if (isset($_SESSION["studentID"])) {
+                        echo "<a href='account.php'>Account</a>";
+                        echo "<a href='includes/logout.inc.php'>Log Out</a>";
+                    }
+                    else {
+                        echo "<a href='login.php'>Log In</a>";
+                        echo "<a href='signup.php'>Sign Up</a>";
+                    }
+                ?>
+            </div>
+
         </div>
     </div>
     <nav class="navbar">
@@ -69,4 +74,6 @@
             </ul>
         </div>
     </nav>
+
+    <script src="app.js"></script>
 </body>

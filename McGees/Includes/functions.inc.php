@@ -76,8 +76,9 @@ function createUser($conn, $firstName, $lastName, $email, $pwd, $phoneNumber, $n
     mysqli_stmt_bind_param($stmt, "sssssss", $firstName, $lastName, $email, $hashedPwd, $phoneNumber, $nokNumber, $postCode);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../login.php?error=none");
+    header("location: ../index.php?error=none");
     exit();
+    
 }
 
 function emptyInputLogin($email, $pwd) {
@@ -126,4 +127,40 @@ function emptyInputDetails($firstName, $lastName, $phoneNumber, $nokNumber, $pos
         $result = false;
     }
     return $result;
+}
+
+function isUserLoggedIn() {
+    session_start();
+    $result = null;
+
+    if (isset($_SESSION["studentID"])) {
+        $result = true;
+    }
+    else {
+        $result = false;
+    }
+    return $result;
+}
+
+function addCourse($conn, $studentID, $courseVariable) {
+    $sql = "UPDATE students SET CourseEnrolled = ? WHERE StudentID = ?";
+    $stmt = mysqli_stmt_init($conn);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        header("location: ../index.php?error=stmtfailed");
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "si", $courseVariable, $studentID);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+
+    if (isset($_SESSION["studentID"])) {
+        header("location: ../index.php?error=none");
+        exit();
+    }
+    else {
+        header("location: ../index.php?error=notloggedin");
+        exit();
+    }
 }

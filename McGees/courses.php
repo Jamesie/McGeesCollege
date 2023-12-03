@@ -17,7 +17,7 @@
     $currentPage = 'courses';
     include_once "header.php"
     ?>
-    <div class="hero" style = "background-image: url(Images/course_header.png)">
+    <div class="hero" style = "background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Images/course_header.png)">
         <div class="hero-text">
             <h1>Courses</h1>
         </div>

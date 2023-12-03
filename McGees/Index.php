@@ -16,7 +16,7 @@
     $currentPage = 'home';
     include_once "header.php";
     ?>
-    <div class="hero" style = "background-image: url(Images/homeHeaderImage.png)">
+    <div class="hero" style = "background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Images/homeHeaderImage.png)">
         <p>
             Distance learning, or online learning, is an alternative route to studying a degree with a university in the UK, and gives your studies more flexibility, which may suit your circumstances.
         </p>
@@ -52,7 +52,7 @@
                     <h2>
                         A-Level Business
                     </h2>
-                    <a href="courses.php" class = "square_button">Read More</a>
+                    <a href="business.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -63,7 +63,7 @@
                     <h2>
                         A-Level Digital
                     </h2>
-                    <a href="courses.php" class = "square_button">Read More</a>
+                    <a href="digital.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -74,7 +74,7 @@
                     <h2>
                         A-Level Languages
                     </h2>
-                    <a href="courses.php" class = "square_button">Read More</a>
+                    <a href="languages.php" class = "square_button">Read More</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
                     <h2>
                         GCSE Maths
                     </h2>
-                    <a href="courses.php" class = "square_button">Read More</a>
+                    <a href="math.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -100,7 +100,7 @@
                     <h2>
                         GCSE English
                     </h2>
-                    <a href="courses.php" class = "square_button">Read More</a>
+                    <a href="english.php" class = "square_button">Read More</a>
                 </div>
             </div>
             <div class="home_course_wrapper">
@@ -111,7 +111,7 @@
                     <h2>
                         GCSE Computer Science
                     </h2>
-                    <a href="courses.php" class = "square_button">Read More</a>
+                    <a href="computerscience.php" class = "square_button">Read More</a>
                 </div>
             </div>
         </div>

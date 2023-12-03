@@ -671,3 +671,56 @@ body{
     text-align: center;
     padding: 1rem 1rem 2rem 2rem;
 }
+
+.add_course_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_course_container p {
+    position: relative;
+    text-align: center;
+    bottom: -7px;
+    font-size: medium;
+    color: red;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    right: 5%;
+    top: 80px;
+    background-color: #CAE8FF;
+    border-radius: 15px;
+    width: 160px;
+    box-shadow: 10px 12px 10px 0px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+    z-index: 100;
+}
+
+.dropdown-content.show {
+    max-height: 130px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #d3e1ec;
+}
+.dropdown-content a:nth-child(2):hover {
+    color: red;
+}
