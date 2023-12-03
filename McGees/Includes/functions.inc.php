@@ -41,7 +41,7 @@ function pwdMatch($pwd, $pwdRepeat) {
 }
 
 function emailUsed($conn, $email) {
-    $sql = "SELECT * FROM Students Where Email = ?;";
+    $sql = "SELECT * FROM students Where Email = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../signup.php?error=stmtfailed");
@@ -163,4 +163,132 @@ function addCourse($conn, $studentID, $courseVariable) {
         header("location: ../index.php?error=notloggedin");
         exit();
     }
+}
+
+function getCourseDescription($conn, $courseName) {
+    $sql = "SELECT CourseDescription FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $courseDescription);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $courseDescription;
+}
+
+function getCourseLO($conn, $courseName) {
+    $sql = "SELECT LearningObjectives FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $learningObjectives);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $learningObjectives;
+}
+
+function getCourseLevel($conn, $courseName) {
+    $sql = "SELECT Level FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $courseLevel);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $courseLevel;
+}
+
+function getCourseDuration($conn, $courseName) {
+    $sql = "SELECT Duration FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $courseDuration);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $courseDuration;
+}
+
+function getCourseLanguage($conn, $courseName) {
+    $sql = "SELECT Language FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $courseLanguage);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $courseLanguage;
+}
+
+function getCourseImage($conn, $courseName) {
+    $sql = "SELECT CourseImageURL FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $courseImage);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $courseImage;
+}
+
+function getCourseTitle($conn, $courseName) {
+    $sql = "SELECT CourseTitle FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $courseTitle);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $courseTitle;
+}
+
+function getCoursePrice($conn, $courseName) {
+    $sql = "SELECT CoursePrice FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $CoursePrice);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $CoursePrice;
 }
