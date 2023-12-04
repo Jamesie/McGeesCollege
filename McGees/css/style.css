@@ -721,6 +721,3 @@ body{
 .dropdown-content a:hover {
     background-color: #d3e1ec;
 }
-.dropdown-content a:nth-child(2):hover {
-    color: red;
-}

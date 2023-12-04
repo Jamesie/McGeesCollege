@@ -292,3 +292,51 @@ function getCoursePrice($conn, $courseName) {
     }
     return $CoursePrice;
 }
+
+function getStudentName($conn, $studentID) {
+    $sql = "SELECT FirstName FROM students WHERE StudentID = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $studentID);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $name);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $name;
+}
+
+function getCourseTutor($conn, $courseName) {
+    $sql = "SELECT Tutor FROM courses WHERE CourseName = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $courseName);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $CourseTutor);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $CourseTutor;
+}
+
+function getStudentCourse($conn, $studentID) {
+    $sql = "SELECT CourseEnrolled FROM students WHERE StudentID = ?";
+    $stmt = mysqli_stmt_init($conn);
+    
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $studentID);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $courseName);
+    
+        mysqli_stmt_fetch($stmt);
+    
+        mysqli_stmt_close($stmt);
+    }
+    return $courseName;
+}
