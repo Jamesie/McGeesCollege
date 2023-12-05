@@ -15,7 +15,6 @@
 </head>
 <body>
      <?php
-    $currentPage = 'home';
     include_once "header.php";
     include_once "Includes/functions.inc.php";
     include_once "Includes/dbh.inc.php";
@@ -81,7 +80,13 @@
                             </div>
                             <div class="sticky_value">
                             <?php
+                            if ($currentPage === "CS") {
+                                echo "<p>$currentPage</p>";
+
+                            }
+                            else {
                                 echo "<p>$courseName</p>";
+                            }
                             ?>
                             </div>
                         </div>

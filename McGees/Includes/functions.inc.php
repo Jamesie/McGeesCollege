@@ -26,7 +26,7 @@ function invalidPassword($pwd) {
         $result = false;
     }
     return $result;
-}
+}   
 
 function pwdMatch($pwd, $pwdRepeat) {
     $result = null;

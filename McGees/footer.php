@@ -28,12 +28,12 @@
         </div>
         <div class="footer_links">
             <h1>Popular Courses</h1>
-            <a href="courses.php" class="navbar_link underline_link">A-Level Business</a>
-            <a href="courses.php" class="navbar_link underline_link">A-Level Languages</a>
-            <a href="courses.php" class="navbar_link underline_link">A-Level Digital</a>
-            <a href="courses.php" class="navbar_link underline_link">GCSE Maths</a>
-            <a href="courses.php" class="navbar_link underline_link">GCSE Computer Science</a>
-            <a href="courses.php" class="navbar_link underline_link">GCSE English</a>
+            <a href="business.php" class="navbar_link underline_link">A-Level Business</a>
+            <a href="languages.php" class="navbar_link underline_link">A-Level Languages</a>
+            <a href="digital.php" class="navbar_link underline_link">A-Level Digital</a>
+            <a href="math.php" class="navbar_link underline_link">GCSE Maths</a>
+            <a href="computerscience.php" class="navbar_link underline_link">GCSE Computer Science</a>
+            <a href="english.php" class="navbar_link underline_link">GCSE English</a>
         </div>
         <div class="footer_links">
             <h1>Pages</h1>

@@ -15,8 +15,6 @@ if (isset($_POST["submit"])) {
     require_once "dbh.inc.php";
     require_once "functions.inc.php";
 
-    emptyInputDetails($firstName, $lastName, $phoneNumber, $nokNumber, $postCode);
-
     if (emptyInputDetails($firstName, $lastName, $phoneNumber, $nokNumber, $postCode) !== false ) {
         header("location: ../studentdetails.php?error=emptyinput");
         exit();

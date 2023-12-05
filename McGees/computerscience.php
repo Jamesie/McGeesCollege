@@ -1,6 +1,6 @@
 <?php
 
-$currentPage = 'home';
+$currentPage = 'CS';
 $courseName = "ComputerScience";
 include_once "header.php";
 include_once "Includes/functions.inc.php";
