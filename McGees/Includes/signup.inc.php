@@ -11,9 +11,6 @@ if (isset($_POST["submit"])) {
     require_once "dbh.inc.php";
     require_once "functions.inc.php";
 
-    $_SESSION['email'] = $email;
-    $_SESSION['pwd'] = $pwd;
-
     
     if (emptyInputSignup($email, $pwd, $pwdRepeat) !== false ) {
         header("location: ../signup.php?error=emptyinput");
@@ -34,6 +31,9 @@ if (isset($_POST["submit"])) {
         header("location: ../signup.php?error=emailtaken");
         exit();
     }
+
+    $_SESSION['email'] = $email;
+    $_SESSION['pwd'] = $pwd;
 
     header("location: ../studentdetails.php");
 }

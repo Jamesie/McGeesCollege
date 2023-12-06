@@ -25,8 +25,6 @@ session_start()
             </div>
             <form action="includes/details.inc.php" method="post">
                 <div class="text_field_container_signup">
-                    <input type="hidden" name = "email" value = "<?php echo $_SESSION['email']; ?>">
-                    <input type="hidden" name = "pwd" value = "<?php echo $_SESSION['pwd']; ?>">
                     <input type="text" name = "firstName" placeholder= "First Name">
                     <input type="text" name = "lastName" placeholder= "Last Name">
                     <input type="text" name = "phoneNumber" placeholder= "Phone Number">

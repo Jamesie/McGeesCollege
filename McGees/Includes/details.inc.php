@@ -4,8 +4,8 @@ session_start();
 
 if (isset($_POST["submit"])) {
     
-    $email = $_POST["email"];
-    $pwd = $_POST["pwd"];
+    $email = $_SESSION["email"];
+    $pwd = $_SESSION["pwd"];
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $phoneNumber = $_POST["phoneNumber"];
